@@ -43,3 +43,8 @@
   .stats-desc p:nth-child(2) {
     color: #9eaab7;
   }
+
+  .stats-container .stats:nth-child(2){
+    border-inline: 2px solid #ebf0f5;
+    padding-inline: 40px;
+  }

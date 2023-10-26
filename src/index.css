@@ -113,6 +113,7 @@ main {
 }
 
 .sidebar-container {
+  max-width: 186px;
   padding: 4px 0px 161px 0px;
   display: flex;
   flex-direction: column;
@@ -130,6 +131,8 @@ main {
 
 .sidebar-options:hover {
   background-color: #f7f8fa;
+  color: #445ee2;
+  font-weight: 700;
 }
 
 #skillTest {
@@ -245,6 +248,10 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+  }
+  .stats-container .stats:nth-child(2) {
+    border-inline: 0px;
+    padding-inline: 0px;
   }
   .comparison-graph .graph {
     width: 300px;

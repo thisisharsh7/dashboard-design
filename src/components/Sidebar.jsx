@@ -14,7 +14,7 @@ const Sidebar = () => {
             <div className="sidebar-container">
                 {sidebarOptions.map((option) => (
                     <div className="sidebar-options" id={option.id} key={option.id}>
-                        {option.icon}
+                        <div>{option.icon}</div>
                         <p>{option.text}</p>
                     </div>
                 ))}
