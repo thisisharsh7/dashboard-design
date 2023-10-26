@@ -1,0 +1,43 @@
+.html-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .html-header h2 {
+    color: #222f3e;
+  }
+  .html-content {
+    display: flex;
+    gap: 20.44px;
+    align-items: flex-start;
+  }
+  
+  .html-logo {
+    height: 50px;
+    display: flex;
+  }
+  
+  .html-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #566474;
+  }
+  
+  #update {
+    background-color: #142683;
+    color: white;
+    width: 120px;
+    height: 44px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }

@@ -158,348 +158,6 @@ section {
   border: 1px solid #ebf0f5;
 }
 
-.html-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.html-header h2 {
-  color: #222f3e;
-}
-.html-content {
-  display: flex;
-  gap: 20.44px;
-  align-items: flex-start;
-}
-
-.html-logo {
-  height: 50px;
-  display: flex;
-}
-
-.html-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #566474;
-}
-
-#update {
-  background-color: #142683;
-  color: white;
-  width: 120px;
-  height: 44px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.quick-statistics {
-  grid-column-start: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.stats-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.stats {
-  display: flex;
-  font-size: 10px;
-  font-weight: 400;
-  gap: 20px;
-  align-items: flex-start;
-}
-.stats-img {
-  width: 50px;
-  height: 50px;
-  background-color: #f7f8fa;
-  border: 2px solid #ebf0f5;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.stats-img p {
-  font-size: 2em;
-}
-.stats-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.stats-desc p:first-child {
-  font-size: 2.2em;
-  font-weight: 700;
-}
-.stats-desc p:nth-child(2) {
-  color: #9eaab7;
-}
-
-.syllabus-analysis {
-  grid-row-start: 2;
-  grid-row-end: 5;
-  grid-column: 2;
-}
-
-.syllabus-analysis,
-.all-syllabus,
-.syllabus {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.all-syllabus {
-  gap: 35px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #566474;
-}
-.syllabus {
-  gap: 5px;
-}
-.syllabus-desc {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 700;
-}
-.all-syllabus li:first-child .syllabus-desc {
-  color: #438af6;
-}
-.all-syllabus li:nth-child(2) .syllabus-desc {
-  color: #ff9142;
-}
-.all-syllabus li:nth-child(3) .syllabus-desc {
-  color: #fb5e5e;
-}
-.all-syllabus li:last-child .syllabus-desc {
-  color: #2ec971;
-}
-.syllabus-prog {
-  width: 197px;
-}
-
-.question-analysis {
-  grid-column-start: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.quest-det {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  color: #438af6;
-}
-
-.quest-desc {
-  font-size: 14px;
-  color: #566474;
-  font-weight: 400;
-}
-.quest-desc span:first-child {
-  font-weight: 700;
-}
-
-.quest-desc-progress {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 49px;
-}
-
-.quest-progress {
-  position: relative;
-}
-
-.circle-prog {
-  width: 180px;
-}
-
-.progress-emoji {
-  font-size: 40px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: grid;
-  place-content: center;
-}
-
-.comparison-graph {
-  display: flex;
-  flex-direction: column;
-  grid-row-start: 4;
-  grid-row-end: span 2;
-  gap: 30px;
-}
-.comparison-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-.comparison-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: #566474;
-}
-.comparison-text p {
-  font-size: 14px;
-  font-weight: 700;
-}
-.comparison-text p span:last-child {
-  font-weight: 400;
-}
-
-.graph-img {
-  width: 50px;
-  height: 50px;
-  background-color: #f7f8fa;
-  border: 2px solid #ebf0f5;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-
-.comparison-graph .graph {
-  height: 100%;
-  width: 100%;
-}
-
-.update-modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 50;
-  display: grid;
-  place-content: center;
-  background-color: #1e272eb2;
-}
-
-.modal-container {
-  padding-inline: 40px;
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 880px;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  color: #222f3e;
-  font-size: 36px;
-  font-weight: 700;
-  align-items: center;
-  padding-block: 30px 20px;
-}
-
-.modal-items {
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-  padding: 28px;
-  border-block: 1px solid #ebf0f5;
-  border-radius: 2px;
-  font-weight: 700;
-}
-
-.modal-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.modal-text {
-  display: flex;
-  gap: 20px;
-  color: #566474;
-  font: 18px;
-}
-
-.modal-text p:first-child {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font: 15px;
-  background-color: #142683;
-  border-radius: 100%;
-}
-
-.modal-text p:last-child span:first-child {
-  font-weight: 400;
-}
-
-.modal-input {
-  padding: 8px 16px;
-  border-radius: 5px;
-  border: 1px solid #142683;
-  width: 157px;
-}
-
-.modal-input input {
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  color: #142683;
-  outline: none;
-  width: 100%;
-}
-
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 28px;
-  gap: 39px;
-}
-
-.modal-footer button {
-  font: 16px 700;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid #142683;
-}
-
-#cancel-update {
-  color: #142683;
-  background-color: white;
-}
-
-#save-update {
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #142683;
-}
-
 @media only screen and (max-width: 1024px) {
   section {
     grid-template-columns: 1.2fr 1fr;
@@ -541,6 +199,20 @@ section {
   section {
     padding: 15px 20px;
   }
+  .modal-container {
+    padding-inline: 25px;
+    width: fit-content;
+  }
+  .modal-header {
+    padding-block: 18px 12px;
+    font-size: 28px;
+  }
+  .modal-footer {
+    padding-block: 24px;
+  }
+  .modal-items {
+    gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -576,6 +248,35 @@ section {
   }
   .comparison-graph .graph {
     width: 300px;
+  }
+  .modal-header {
+    padding-block: 12px;
+    font-size: 20px;
+  }
+  .modal-footer {
+    padding-block: 20px;
+  }
+  .modal-items {
+    gap: 22px;
+  }
+  .modal-item {
+    font-size: 14px;
+  }
+  .modal-input {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #142683;
+    width: 80px;
+  }
+  .modal-text {
+    gap: 12px;
+  }
+  .modal-text p:first-child {
+    font-size: 10px;
+  }
+  .modal-input input,
+  .modal-footer button {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 340px) {

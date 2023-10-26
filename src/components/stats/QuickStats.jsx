@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import RenderStat from "./RenderStat";
-import { GlobalInfo } from "../App";
+import { GlobalInfo } from "../../App";
+import './style.css';
 
 const QuickStats = () => {
     const { data } = useContext(GlobalInfo);

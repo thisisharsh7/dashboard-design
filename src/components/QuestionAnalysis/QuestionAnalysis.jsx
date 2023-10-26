@@ -1,6 +1,7 @@
 import { Circle } from "rc-progress"
 import { useContext, useEffect, useState } from "react";
-import { GlobalInfo } from "../App";
+import { GlobalInfo } from "../../App";
+import './style.css';
 
 
 const QuestionAnalysis = () => {

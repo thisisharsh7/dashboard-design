@@ -1,27 +1,32 @@
 import { useContext, useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
-import { GlobalInfo } from '../App';
+import { GlobalInfo } from '../../App';
+import './style.css';
 
 const UpdateModal = ({ onClose }) => {
   const { data, updateData } = useContext(GlobalInfo);
   const [getData, setData] = useState(data);
 
   const modalItems = [
-    { label: 'rank', name: 'rank', value: getData.rank },
-    { label: 'percentile', name: 'percentile', value: getData.percentile },
-    { label: 'current score (out of 15)', name: 'correct', value: getData.correct },
+    { label: 'rank', name: 'rank' },
+    { label: 'percentile', name: 'percentile' },
+    { label: 'current score (out of 15)', name: 'correct' },
   ];
 
   const getScores = (e) => {
     const { name, value } = e.target;
-    setData({
-      ...getData,
-      [name]: Number(value),
-    });
+
+    if (Number(value) || value == '') {
+      setData({
+        ...getData,
+        [name]: Number(value),
+      });
+    }
   }
 
   const updateScores = () => {
-    if (getData.rank == 0 && getData.percentile == 0 && getData.correct == 0) {
+    const { rank, percentile, correct } = getData;
+    if (rank === 0 || percentile === 0 || correct === 0) {
       alert('Input cannot be blank or zero!');
     } else {
       if (getData.percentile > 100) {
@@ -55,7 +60,7 @@ const UpdateModal = ({ onClose }) => {
                 <p><span>Update your </span><span>{item.label}</span></p>
               </div>
               <div className="modal-input">
-                <input type='text' name={item.name} value={item.value} onChange={getScores} />
+                <input type='text' name={item.name} value={getData[item.name]} onChange={getScores} />
               </div>
             </li>
           ))}

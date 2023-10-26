@@ -1,0 +1,45 @@
+
+.syllabus-analysis {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column: 2;
+  }
+  
+  .syllabus-analysis,
+  .all-syllabus,
+  .syllabus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .all-syllabus {
+    gap: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #566474;
+  }
+  .syllabus {
+    gap: 5px;
+  }
+  .syllabus-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+  .all-syllabus li:first-child .syllabus-desc {
+    color: #438af6;
+  }
+  .all-syllabus li:nth-child(2) .syllabus-desc {
+    color: #ff9142;
+  }
+  .all-syllabus li:nth-child(3) .syllabus-desc {
+    color: #fb5e5e;
+  }
+  .all-syllabus li:last-child .syllabus-desc {
+    color: #2ec971;
+  }
+  .syllabus-prog {
+    width: 197px;
+  }
+  

@@ -1,5 +1,6 @@
 import { Line } from "rc-progress";
 import { useEffect, useState } from "react";
+import './style.css';
 
 const syllabusData = [
     {

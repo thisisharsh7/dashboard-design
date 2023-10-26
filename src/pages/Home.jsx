@@ -1,10 +1,10 @@
-import ComparisonGraph from "../components/ComparisonGraph"
+import ComparisonGraph from "../components/comparisonGraph/ComparisonGraph"
 import Header from "../components/Header"
-import Hero from "../components/Hero"
-import QuestionAnalysis from "../components/QuestionAnalysis"
-import QuickStats from "../components/QuickStats"
+import Hero from "../components/htmlHeader/HtmlHeader"
+import QuestionAnalysis from "../components/QuestionAnalysis/QuestionAnalysis"
+import QuickStats from "../components/stats/QuickStats"
 import Sidebar from "../components/Sidebar"
-import SyllabusAnalysis from "../components/SyllabusAnalysis"
+import SyllabusAnalysis from "../components/syllabusAnalysis/SyllabusAnalysis"
 
 const Home = () => {
     return (

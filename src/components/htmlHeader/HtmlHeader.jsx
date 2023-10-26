@@ -1,8 +1,9 @@
 import { useState } from "react";
-import UpdateModal from "./UpdateModal";
+import UpdateModal from "../updateModal/UpdateModal";
+import './style.css';
 
 
-const Hero = () => {
+const HtmlHeader = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
@@ -26,4 +27,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default HtmlHeader

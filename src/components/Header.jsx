@@ -19,7 +19,7 @@ const Header = () => {
                             <img src="./assets/avatar.png" alt="" />
                         </span>
                         <span>
-                            <p>Siddharth Jain</p>
+                            <p>Harsh Kumar</p>
                             <GoChevronDown />
                         </span>
                     </div>
